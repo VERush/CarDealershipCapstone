@@ -9,16 +9,29 @@
 </head>
 <body>
 <h2>Search for a Car: </h2>
-<form action="results">
 
+<form action="carmake">
 	Make: <input type="text" name="make"><br>
+	<input type="submit" value="Submit">
+</form><br>
+
+<form action="carmodel">
 	Model: <input type="text" name="model"><br>
+	<input type="submit" value="Submit">
+</form><br>
+
+<form action="caryear">
 	Year: <input type="text" name="year"><br>
+	<input type="submit" value="Submit">
+</form><br>
+
+<form action="carcolor">
 	Color: <input type="text" name="color"><br>
 	<input type="submit" value="Submit">
-	
-	
-</form> <br>
+</form><br>
+
+
+
 
 
 </body>

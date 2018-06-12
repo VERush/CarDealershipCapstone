@@ -12,7 +12,7 @@ public class HomeController {
 	@Autowired
 	CarRepository cR;
 	
-	@RequestMapping("index")
+	@RequestMapping("/")
 	public String index() {
 		return "index";
 	}

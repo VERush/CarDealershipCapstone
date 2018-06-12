@@ -17,14 +17,6 @@ public class RestCarController {
 	@Autowired
 	CarRepository cr;
 	
-	// List all cars
-	@GetMapping("/")
-	public List<Car> listAll() {
-
-		return cr.findAll();
-
-	}
-	
 	@GetMapping("/carmake")
 	public List<Car> carMake(@RequestParam("make") String make) {
 		
@@ -36,7 +28,7 @@ public class RestCarController {
 	public List<Car> carModel(@RequestParam("model") String model) {
 		
 		
-		return cr.findByLastModel(model);
+		return cr.findByModel(model);
 	}
 	
 	@GetMapping("/caryear")
