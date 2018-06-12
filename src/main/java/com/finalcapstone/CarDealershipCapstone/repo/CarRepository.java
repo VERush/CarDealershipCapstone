@@ -1,4 +1,10 @@
 package com.finalcapstone.CarDealershipCapstone.repo;
+/*
+ * Car Dealership Capstone
+ * Showcasing API creation
+ * Allison Farr, Ben McBrayer, Jonah Wooten, Victoria Rush
+ * April 2018 Grand Circus Java Bootcamp
+ */
 
 import java.util.List;
 
@@ -29,4 +35,10 @@ public interface CarRepository extends JpaRepository<Car, Integer> {
 	
 	List<Car> findByYearAndColor(int year, String color);
 	
+	List<Car> findByMakeAndModelAndYear(String make, String model, int year);
+	
+	List<Car> findByMakeAndModelAndColor(String make, String model, String color);
+	
+	List<Car> findByModelAndYearAndColor(String model, int year, String color);
+
 }
