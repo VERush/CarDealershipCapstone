@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.finalcapstone.CarDealershipCapstone.entity.Car;
 import com.finalcapstone.CarDealershipCapstone.repo.CarRepository;
 
+
 @RestController
 public class RestCarController {
 
