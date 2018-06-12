@@ -1,7 +1,12 @@
 package com.finalcapstone.CarDealershipCapstone.repo;
+/*
+ * Car Dealership Capstone
+ * Showcasing API creation
+ * Allison Farr, Ben McBrayer, Jonah Wooten, Victoria Rush
+ * April 2018 Grand Circus Java Bootcamp
+ */
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
