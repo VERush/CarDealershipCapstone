@@ -1,16 +1,18 @@
 package com.finalcapstone.CarDealershipCapstone.repo;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.finalcapstone.CarDealershipCapstone.entity.Car;
+
 public interface CarRepository extends JpaRepository<Car, Integer> {
 
-	Optional<Car> findByMake(String make);
+	List<Car> findByMake(String make);
 	
-	Optional<Car> findByLastModel(String model);
+	List<Car> findByLastModel(String model);
 	
-	Optional<Car> findByYear(int year);
+	List<Car> findByYear(int year);
 	
-	Optional<Car> findByColor(String color);
+	List<Car> findByColor(String color);
 }

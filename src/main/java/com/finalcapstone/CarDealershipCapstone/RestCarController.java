@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.finalcapstone.CarDealershipCapstone.entity.Car;
 import com.finalcapstone.CarDealershipCapstone.repo.CarRepository;
-import com.movieapi.Movie.Movie;
 
 @RestController
 public class RestCarController {
@@ -36,11 +35,11 @@ public class RestCarController {
 	public List<Car> carModel(@RequestParam("model") String model) {
 		
 		
-		return cr.findByModel(model);
+		return cr.findByLastModel(model);
 	}
 	
 	@GetMapping("/caryear")
-	public List<Car> carYear(@RequestParam("year") String year) {
+	public List<Car> carYear(@RequestParam("year") int year) {
 		
 		
 		return cr.findByYear(year);
