@@ -1,5 +1,6 @@
 package com.finalcapstone.CarDealershipCapstone;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,13 @@ public class RestCarController {
 		
 		
 		return cr.findByColor(color);
+	}
+	
+	@GetMapping("/carmakemodel")
+	public List<Car> carColor(@RequestParam("make") String make, @RequestParam("model") String model) {
+		
+		
+		return cr.findByMakeAndModel(make, model);
 	}
 	
 	

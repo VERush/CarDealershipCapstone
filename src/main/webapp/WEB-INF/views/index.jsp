@@ -30,7 +30,11 @@
 	<input type="submit" value="Submit">
 </form><br>
 
-
+<form action="carmakemodel">
+	Make: <input type="text" name="make"><br>
+	Model: <input type="text" name="model"><br>
+	<input type="submit" value="Submit">
+</form><br>
 
 
 
