@@ -10,6 +10,15 @@
 <body>
 <h2>Search for a Car: </h2>
 
+<form action="carlist">
+	Make: <input type="text" name="make"><br>
+	Model: <input type="text" name="model"><br>
+	Year: <input type="number" name="year"><br>
+	Color: <input type="text" name="color"><br>
+	<input type="submit" value="Submit">
+</form><br>
+
+
 <form action="carmake">
 	Make: <input type="text" name="make"><br>
 	<input type="submit" value="Submit">
