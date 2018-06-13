@@ -36,7 +36,7 @@ public class RestCarController {
 			bitMask+=8;
 		}
 		
-		if (year > 1000) {
+		if (!year.isEmpty()) {
 			bitMask+=4;	
 		}
 		
