@@ -8,28 +8,36 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name= "car")
+@Table(name = "car")
 public class Car {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int carid;
-	@Column(name= "make")
+	@Column(name = "make")
 	private String make;
-	@Column(name= "model")
+	@Column(name = "model")
 	private String model;
-	@Column(name= "year")
-	private int year;
-	@Column(name= "color")
+	@Column(name = "year")
+	private String year;
+	@Column(name = "color")
 	private String color;
-	
+
 	public Car() {
-		
+
 	}
 
-	public Car(int carid, String make, String model, int year, String color) {
+	public Car(int carid, String make, String model, String year, String color) {
 		super();
 		this.carid = carid;
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.color = color;
+	}
+
+	public Car(String make, String model, String year, String color) {
+		super();
 		this.make = make;
 		this.model = model;
 		this.year = year;
@@ -60,11 +68,11 @@ public class Car {
 		this.model = model;
 	}
 
-	public int getYear() {
+	public String getYear() {
 		return year;
 	}
 
-	public void setYear(int year) {
+	public void setYear(String year) {
 		this.year = year;
 	}
 
@@ -79,17 +87,7 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Car carid=" + carid + ", make=" + make + ", model=" + model + ", year=" + year + ", color=" + color;
-				
+
 	}
 
-	public Car(String make, String model, int year, String color) {
-		super();
-		this.make = make;
-		this.model = model;
-		this.year = year;
-		this.color = color;
-	}
-	
-	
-	
 }
